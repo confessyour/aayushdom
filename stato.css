@@ -10,7 +10,7 @@
   }
   
   body{
-    background: linear-gradient(rgb(211, 193, 193), rgb(171, 253, 185), rgb(236, 7, 7));
+    background: linear-gradient(#0444bf, #0584f2, #0aaff1,#edf259, #a79674);
   }
   
   nav{
@@ -27,11 +27,18 @@
   
   nav .right a{
     color: black;
+    background-color: transparent;
     font-size: 18px;
     padding: 20px;
     font-weight: bold;
   }
-  
+  nav .right a:hover{
+    color: orangered;
+  }
+  .bottom ul li{
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   .container{
     max-width: 750px;
     margin: auto;
@@ -42,8 +49,8 @@
   }
   
   .container .top h1{
-    font-family: cursive;
-    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;
     font-weight: 900;
     letter-spacing: 4px;
     font-size: 105px;
@@ -69,22 +76,23 @@
     display: flex;
   }
   
-  .container .bottom .left{
   
-  }
   
   .container .bottom .right{
     display: flex;
   }
   
   .container .bottom .left .top h2{
-    color: #f8dc09;
+    color: #5d0188;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif,fantasy ;
   }
   
   .container .bottom .left .bottom p{
     font-size: 18px;
+    color: #000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
   .container .bottom .right .right{
@@ -121,6 +129,7 @@
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: aqua;
   }
   
   .container .bottom .right .small{
@@ -141,10 +150,12 @@
     font-size: 17px;
     margin-bottom: 8px;
     font-weight: bold;
+    color: aqua;
   }
   
   .container .bottom .right .small .bottom{
     font-size: 10px;
+    color: aqua;
   }
   
   body > input{
