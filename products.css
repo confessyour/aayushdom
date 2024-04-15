@@ -1,0 +1,237 @@
+
+
+.card{
+  box-shadow: 0 6px 6px rgba(#000, 0.3);
+  transition: 200ms;
+  background: #fff;
+  
+  .card__title{
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    
+    h3{
+      flex: 0 1 200px;
+      text-align: right;
+      margin: 0;
+      color: #252525;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    
+    .icon{
+      flex: 1 0 10px;
+      background:rgb(255, 69, 2);
+      color: #fff;
+      padding: 8px 8px;
+      transition: 0.3ms;
+      
+      > a{
+        color: #f7eded;
+      }
+      
+      &:hover{
+        background: #474343;
+      }
+    }
+  }
+  
+  .card__body{
+    padding: 0 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    margin-bottom: 25px;
+    
+    > .half{
+      box-sizing: border-box;
+      padding: 0 15px;
+      flex: 1 0 50%;
+    }
+    
+    .featured_text{
+      h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        font-size: 64px;
+        line-height: 50px;
+        color: #181e28;
+      }
+      
+      p{
+        margin: 0;
+        padding: 0;
+        
+        &.sub{
+          font-family: "Montserrat", sans-serif;
+          font-size: 26px;
+          text-transform: uppercase;
+          color: #686e77;
+          font-weight: 300;
+          margin-bottom: 5px;
+        }
+        
+        &.price{
+          font-family: "Fjalla One", sans-serif;
+          color: #252525;
+          font-size: 26px;
+        }
+      }
+    }
+    
+    .image{
+      padding-top: 15px;
+      width: 100%;
+      
+      img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    
+    .description{
+      margin-bottom: 25px;
+      
+      p{
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 27px;
+        font-size: 16px;
+        color: #555;
+      }
+    }
+    
+    span.stock{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: #a1cc16;
+    }
+    }
+  }
+  
+  .card__footer{
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    position: relative;
+    
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 40px;
+      width: calc(100% - 40px);
+      height: 3px;
+      background: #115dd8;
+      background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+    }
+    
+    .recommend{
+      flex: 1 0 10px;
+      
+      p{
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+      }
+     
+      h3{
+        margin: 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #115dd8;
+      }
+    }
+    
+    .action{
+      button{
+        cursor: pointer;
+        border: 1px solid #115dd8;
+        padding: 14px 30px;
+        border-radius: 200px;
+        color: #fff;
+        background: #115dd8;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        transition: 200ms;
+        
+        &:hover{
+          background: #fff;
+          color: #115dd8;
+        }
+      }
+    }
+  }
+  .logo-container {
+    background-image: url("2.png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -45px;
+  }
+  
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+ul li a{
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+  font-family: arial;
+  font-weight: bold;
+  transition: o.4s ease-in-out;
+}
+ul li a:hover{
+  color: orangered;
+}
